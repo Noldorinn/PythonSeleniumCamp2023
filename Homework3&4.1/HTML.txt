@@ -1,0 +1,18 @@
+# HTML
+
+Hiper Metin İşaretleme Dili (HTML, HyperText Markup Language kelimelerinin baş harflerinin kısaltılmasıdır), 
+web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir.
+
+HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına çalışan bir program yazılamaz.
+Ancak bu dili yorumlayabilen programlar aracılığıyla çalışabilen programlar yazılabilir. 
+Programlama dili denilememesinin nedeni tam olarak budur.
+
+<!-- Bu metin girişi içindir -->
+<input type="text">
+<!-- Bu dosyaları yüklemek içindir -->
+<input type="file">
+<!-- Bu onay kutuları içindir -->
+<input type="checkbox">
+<!-- Bu bir yorum -->
+
+https://tr.wikipedia.org/wiki/HTML

@@ -1,0 +1,56 @@
+HTML Locators
+HTML Locators, bir HTML belgesi içindeki öğeleri tanımlamanın ve bulmanın bir yoludur. 
+Bu belirleyiciler bir web sayfasındaki belirli öğelerle etkileşim kurmak için otomatik testlerde ve web scraping işlemlerinde kullanılır.
+*ID
+*ClassName
+*Name
+*TagName
+*LinkText
+*CssSelector
+*XPath
+*DOM Locator
+
+*ID
+ID, web sayfasında her öğeye özgü olduğu düşünülerek öğeleri bulmanın en yaygın yoludur. 
+Id’nin değişken olup olmadığı sayfa yenilenerek tekrar ilgili elemente ulaşıp kontrol ederek anlaşılabilir.
+
+driver.findElement(By.id(“createacc”))
+
+*ClassName
+ClassName locator, elementin class özelliği kullanılarak bulunmasını sağlar.
+
+driver.findElement(By.className(“btn btn-lg btn-primary”))
+
+*Name
+Selenium WebDriver’daki Name locator, ID gibi kullanılabilir.
+
+driver.findElement(By.name(“login-password”))
+
+*TagName
+Selenium WebDriver’daki bu bulucu, div etiketi, etiket vb. gibi etiket adlarına sahip öğeleri tanımlamak için kullanılır.
+
+driver.findElements(By.tagName(a));
+driver.findElements(By.tagName(div));
+
+*LinkText
+Elementler, bağlantı metni aracılığıyla yerleştirilebilir. 
+Aynı metnin birden çok bağlantısının bulunduğu bir senaryoda, ilk bağlantı seçilir.
+
+driver.findElement(By.linkText(“Blog”))
+
+*CssSelector
+Bir elementte ID ya da name ile ilgili bir bilgi yoksa veya bunlar değişken ise CSS selector ve Xpath ile elementi bulmaya çalışırız. 
+Xpath ile karşılaştırıldığında CSS selector daha hızlı çalışmaktadır.
+
+*XPath
+Xpath, XML ifadelerini kullanarak web sayfasındaki öğeleri bulmaya yardımcı olur.
+
+*DOM Locator
+Elementi ID ve Name yoluyla DOM’un “getElementById” ve “getElementsByName” gibi yöntemlerini kullanarak tanımlayabiliriz. 
+GetElementById yöntemi bir kerede yalnızca bir öğeyi bulur, diğer yöntem ise bu adla bulunan bir dizi elementi sağlamak için kullanılır. 
+Bir dizi elementin olması durumunda belirtilen spesifik bir öğeye erişmek için index kullanabiliriz.
+
+document.getElementsByNames(“name”)[index]
+
+
+https://medium.com/@ilkebasalak/selenium-yer-bulucular-locators-nelerdir-785da3ceb9a1

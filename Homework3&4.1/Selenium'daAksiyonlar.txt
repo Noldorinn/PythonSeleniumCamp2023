@@ -1,0 +1,72 @@
+Selenium Aksiyonları
+
+build() #Şimdiye kadarki tüm eylemleri içeren, gerçekleştirilmeye hazır (ve dahili oluşturucu durumunu sıfırlar, böylece bu yönteme yapılan sonraki çağrılar yeni içerir diziler).
+
+click() #Geçerli fare konumuna tıklar.
+
+click​(WebElement target) #Verilen öğenin ortasındaki tıklamalar.
+
+clickAndHold() #Geçerli fare konumundaki tıklamalar (serbest bırakmadan).
+
+clickAndHold​(WebElement target)  #Verilen öğenin ortasındaki tıklamalar (serbest bırakmadan)
+
+contextClick() #Geçerli fare konumunda bir bağlam tıklatması gerçekleştirir.
+
+contextClick​(WebElement target) #Verilen öğenin ortasında bir bağlam tıklatması gerçekleştirir. İlk önce bir mouseMove gerçekleştirir öğenin konumuna.
+
+doubleClick() #Geçerli fare konumunda çift tıklatma gerçekleştirir.
+
+doubleClick​(WebElement target) #Verilen öğenin ortasında çift tıklatma gerçekleştirir.
+
+dragAndDrop​(WebElement source, WebElement target) #Kaynak öğenin konumunda tıklatıp basılı tut işlemini gerçekleştiren bir kolaylık yöntemi, hedef öğenin konumuna gider, sonra fareyi serbest bırakır.
+
+dragAndDropBy​(WebElement source, int xOffset, int yOffset) #Kaynak öğenin konumunda tıklatıp basılı tut işlemini gerçekleştiren bir kolaylık yöntemi, belirli bir ofset ile hareket eder, sonra fareyi serbest bırakır.
+
+getActiveKeyboard()
+
+getActivePointer()
+
+getActiveWheel()
+
+keyDown​(java.lang.CharSequence key) #bir tuşa basmayı gerçekleştirir
+
+keyDown​(WebElement target, java.lang.CharSequence key) #Bir öğeye odaklandıktan sonra değiştirici tuşa basmayı gerçekleştirir.
+
+keyUp​(java.lang.CharSequence key) #Tuşun serbest bırakma işlemi gerçekleştirir.
+
+keyUp​(WebElement target, java.lang.CharSequence key) #Bir öğeye odaklandıktan sonra tuşu serbest bırakma işlemi gerçekleştirir. 
+
+moveByOffset​(int xOffset, int yOffset) #Fareyi geçerli konumundan (veya 0,0) verilen ofset ile hareket ettirir.
+
+moveToElement​(WebElement target) #Fareyi öğenin ortasına taşır.
+
+moveToElement​(WebElement target, int xOffset, int yOffset) #Fareyi, öğenin görüş alanı merkez noktasından bir ofsete hareket ettirir.
+
+pause​(long pause) #Bir duraklama gerçekleştirir. milisaniye cinsinden.
+
+perform() #Önce build() öğesini çağırmadan eylemleri gerçekleştirmek için kullanışlı bir yöntem.
+
+release() #Basılı sol fare düğmesini geçerli fare konumunda serbest bırakır.
+
+release​(WebElement target) #Verilen öğenin ortasındaki basılı sol fare düğmesini serbest bırakır.
+
+scrollByAmount​(int deltaX, int deltaY) #Sağlanan miktarlara göre kaydırılır ve kaynağı görüntüleme çerçevesinin sol üst köşesindedir.
+
+scrollFromOrigin​(WheelInput.ScrollOrigin scrollOrigin, int deltaX, int deltaY) #Sağlanan bir menşee göre sağlanan miktara göre kaydırmalar.
+
+scrollToElement​(WebElement element) #Öğe görüntüleme çerçevesinin dışındaysa, öğenin alt kısmını görüntüleme çerçevesinin altına kaydırır.
+
+sendKeys​(java.lang.CharSequence... keys) #Etkin öğeye tuş gönderir
+
+sendKeys​(WebElement target, java.lang.CharSequence... keys) #Bir öğeye tuş gönderir.
+
+setActiveKeyboard​(java.lang.String name)
+
+setActivePointer​(PointerInput.Kind kind, java.lang.String name)
+
+setActiveWheel​(java.lang.String name)
+
+tick​(Interaction... actions)
+
+
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html
